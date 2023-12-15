@@ -78,6 +78,8 @@ body {
 
 }
 
+/*Hover and transition effect on button*/
+
 .nav__interactive--btn {
     font-size: 12px;
     font-weight: 600;
@@ -85,9 +87,14 @@ body {
     height: 40px;
     margin-right: 1rem;
     margin-top: 1rem;
-    background: none;
+    background: #e0f6fc;
     border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.nav__interactive--btn:hover {
+    background-color: #ecdeff71;
 }
 
 /*Header styling*/
@@ -260,14 +267,15 @@ footer {
 .footer__contact h3 {
     text-align: center;
     font-size: 40px;
-    color: #222;
+    color: #393939;
     margin: 1rem;
 }
 
 .footer__contact {
     width: 434px;
     min-height: 417px;
-    background: lightpink;
+    background: rgba(214, 187, 220, 0.651);
+    box-shadow: 0 -3px 3px -3px #d2d2d2;
     box-sizing: border-box;
     border-radius: 3px;
     position: absolute;
@@ -302,10 +310,18 @@ footer {
     }
     
     .footer__contact--btn {
-        width: 250px;
+        width: 150px;
         height: 30px;
+        font-weight: 700;
         border-radius: 5px;
         border: none;
+        background: #fff;
+        color: #393939;
+        transition: 0.3s;
+    }
+
+    .footer__contact--btn:hover {
+        background-color: #e0f6fc;
     }
 }
 
@@ -322,6 +338,7 @@ footer {
 
     .nav__interactive--menu {
         display: block;
+        cursor: pointer;
     }
     
 }
