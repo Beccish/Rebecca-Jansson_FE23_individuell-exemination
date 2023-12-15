@@ -1,0 +1,393 @@
+/*Images by storyset on Freepik &
+Images by Freepik 
+Footer Graphic Vectors by Vecteezy
+Email Image by talha khalil from Pixabay*/
+
+
+
+
+body {
+    font-family: 'Afacad', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main-wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.main__title {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    h2 {
+        font-size: 53px;
+        font-weight: 700;
+        color: #222;
+    }
+}
+
+
+
+/*Navigation styling*/ 
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0f6fc;
+    
+    
+
+    .nav__logo {
+        font-size: 30px;
+        font-weight: 700;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    
+
+    .nav__links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 2rem;
+        
+
+    }
+
+    .nav__links--active {
+        font-weight: 700;
+        color: #000;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #222;
+    }
+}
+
+.nav__interactive--menu {
+    width: 3rem;
+    display: none;
+
+}
+
+.nav__interactive--btn {
+    font-size: 12px;
+    font-weight: 600;
+    width: 140px;
+    height: 40px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    background: none;
+    border-radius: 3px;
+
+}
+
+/*Header styling*/
+
+.header-wrapper {
+    background: #e0f6fc;
+    height: 714px;
+    
+    
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header__content--text {
+        width: 554px;
+    }
+
+    .header__content--app-btn {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+        
+    }
+
+    .header__img {
+        max-width: 440px;
+        padding-bottom: 0;
+        
+    
+    }
+
+    .header__content h1 {
+        font-size: 53px;
+        font-weight: 700;
+        text-align: center;
+        color: #222;
+        
+    }
+
+    .header__content p {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: #222;
+
+    }
+}
+
+
+/*Card styling*/
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    
+    .card {
+        width: 262px;
+        height: 383px;
+        background-color: fff;
+        box-shadow: 0.2px 1px 3px rgb(0,0,0,0.2);
+        margin: 2px;
+        border-radius: 3px;
+        
+    }
+    
+    .card__img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card__content h4 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        line-height: normal;
+        color: #222;
+    }
+    
+    .card__content p {
+        font-size: 16px;
+        text-align: center;
+        line-height: normal;
+        margin-top: 0;
+        color: #222;
+        
+    }
+
+
+}
+
+/*Collection card styling*/ 
+
+.collection-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .collection__card {
+        width: 554px;
+        max-width: 100%;
+        height: 349px;
+        background: #2b2f30;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .collection__card h3 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: #fff;
+    }
+
+    .collection__card p {
+        font-size: 18px;
+        margin-top: 0;
+        color: #fff;
+        
+    }
+
+    .collection__card--btn {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    width: 140px;
+    height: 40px;
+    border-radius: 3px;
+    border-color: #fff;
+    background: none;
+        
+    }
+
+}
+
+/*Footer styling*/
+
+footer {
+    background-color: grey;
+    height: 500px;
+    width: 100%;
+    background-image: url(vecteezy_background-with-abstract-shapes-vector-design_8641794.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 -3px 3px -3px #e2e2e2;
+    position: absolute;
+    margin-top: 11rem; 
+
+}
+
+/*Contact form styling*/
+
+.footer__contact-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__contact h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #222;
+    margin: 1rem;
+}
+
+.footer__contact {
+    width: 434px;
+    min-height: 417px;
+    background: lightpink;
+    box-sizing: border-box;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: 2.6rem;
+    margin-right: 15rem;
+    
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    input {
+        width: 370px;
+        height: 40px;
+        margin-top: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    
+    }
+    
+    textarea {
+        width: 370px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    
+    }
+    
+    .footer__contact--btn {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+
+
+@media screen and (max-width: 852px) {
+    li {
+        display: none;
+    }
+
+    .nav__interactive--btn {
+        display: none;
+    }
+
+    .nav__interactive--menu {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    .header-wrapper {
+        height: 633px;
+    }
+    
+        .header__content--app-btn {
+           gap: 0.5rem;   
+        }
+    
+        .header__img {
+            max-width: 255px;
+        }
+    
+        .header__content h1 {
+            font-size: 36px;
+            width: 343px;
+            
+        }
+    
+        .header__content p {
+            font-size: 12px;
+            font-weight: 400;
+            width: 282px;
+        }
+
+        .main__title h2 {
+            font-size: 36px;
+
+        }
+            
+            .card {
+                width: 164px;
+                height: 238px;
+                margin: 1px;
+                
+            }
+            
+            .card__img {
+                width: 100%;
+                height: auto;
+            }
+
+
+
+
+        .collection__card {
+            width: 343px;
+            height: 216px;
+    
+        }
+    
+        .collection__card h3 {
+            font-size: 36px;
+        }
+
+
+
+    }
+
+
+
+
+
+
