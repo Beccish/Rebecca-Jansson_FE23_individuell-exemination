@@ -13,20 +13,11 @@ body {
     
 }
 
-.main-wrapper {
-    display: grid;
-    place-items: center;
-}
-
-.main__title {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-
-    h2 {
+.main__title h2 {
         font-size: 53px;
         font-weight: 700;
         color: #222;
-    }
+        text-align: center;
 }
 
 
@@ -101,7 +92,7 @@ body {
 
 .header-wrapper {
     background: #e0f6fc;
-    height: 714px;
+    height: 740px;
     
     
     .header__content {
@@ -112,7 +103,11 @@ body {
     }
     
     .header__content--text {
-        width: 554px;
+        max-width: 554px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .header__content--app-btn {
@@ -151,68 +146,56 @@ body {
 /*Card styling*/
 
 .card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 4rem;
-    
-    .card {
-        width: 262px;
-        height: 383px;
-        background-color: fff;
-        box-shadow: 0.2px 1px 3px rgb(0,0,0,0.2);
-        margin: 2px;
-        border-radius: 3px;
-        
-    }
+    padding: 0px 30px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    justify-self: center;
+    background-color: #fff;
+    box-shadow: 0.2px 1px 3px rgb(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin-bottom: 3rem;
+  }
     
     .card__img {
         width: 100%;
         height: auto;
     }
     
-    .card__content h4 {
-        font-size: 22px;
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 0;
-        line-height: normal;
-        color: #222;
-    }
-    
-    .card__content p {
-        font-size: 16px;
-        text-align: center;
-        line-height: normal;
-        margin-top: 0;
-        color: #222;
-        
-    }
-
-
+   .card__content h4 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: normal;
+  color: #222;
 }
+    
+.card__content p {
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+    margin-top: 0;
+    color: #222;
+  }
+
+
+
 
 /*Collection card styling*/ 
 
-.collection-wrapper {
+.collection__card {
+    background: #2b2f30;
+    border-radius: 3px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-
-    .collection__card {
-        width: 554px;
-        max-width: 100%;
-        height: 349px;
-        background: #2b2f30;
-        border-radius: 3px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
+    align-items: center;
+    grid-column: span 2;
+  }
 
     .collection__card h3 {
         font-size: 32px;
@@ -240,29 +223,28 @@ body {
         
     }
 
-}
+
 
 /*Footer styling*/
 
-footer {
+.footer {
     background-color: grey;
     height: 500px;
     width: 100%;
     background-image: url(vecteezy_background-with-abstract-shapes-vector-design_8641794.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
     box-shadow: 0 -3px 3px -3px #e2e2e2;
-    position: absolute;
     margin-top: 11rem; 
+    display: flex;
+    justify-content: flex-end;
+    
 
 }
 
 /*Contact form styling*/
 
-.footer__contact-wrapper {
-    display: flex;
-    justify-content: flex-end;
-}
 
 .footer__contact h3 {
     text-align: center;
@@ -278,10 +260,12 @@ footer {
     box-shadow: 0 -3px 3px -3px #d2d2d2;
     box-sizing: border-box;
     border-radius: 3px;
-    position: absolute;
     margin-top: 2.6rem;
-    margin-right: 15rem;
+    margin-right: 2rem;
     
+    
+
+/*Contact Us form styling*/
 
     form {
         display: flex;
@@ -296,6 +280,7 @@ footer {
         border: none;
         border-radius: 5px;
         outline: none;
+        background: rgba(255, 255, 255, 0.616);
     
     }
     
@@ -306,6 +291,7 @@ footer {
         border: none;
         outline: none;
         border-radius: 5px;
+        background: rgba(255, 255, 255, 0.616);
     
     }
     
@@ -315,94 +301,59 @@ footer {
         font-weight: 700;
         border-radius: 5px;
         border: none;
-        background: #fff;
+        background: #ffffffca;
         color: #393939;
+        cursor: pointer;
         transition: 0.3s;
     }
 
     .footer__contact--btn:hover {
         background-color: #e0f6fc;
     }
+    
 }
 
 
 
 @media screen and (max-width: 852px) {
+    .card-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 20px;
+    }
+  
     li {
-        display: none;
+      display: none;
     }
-
+  
     .nav__interactive--btn {
-        display: none;
+      display: none;
     }
-
+  
     .nav__interactive--menu {
-        display: block;
-        cursor: pointer;
+      display: block;
+      cursor: pointer;
     }
-    
-}
 
-@media screen and (max-width: 480px) {
+    .nav__interactive--menu:hover {
+      background-color: #bfd5da6f;
+    }
+
     
+  }
+
+  @media screen and (max-width: 480px) {
     .header-wrapper {
-        height: 633px;
+      height: 633px;
     }
-    
-        .header__content--app-btn {
-           gap: 0.5rem;   
-        }
-    
-        .header__img {
-            max-width: 255px;
-        }
-    
-        .header__content h1 {
-            font-size: 36px;
-            width: 343px;
-            
-        }
-    
-        .header__content p {
-            font-size: 12px;
-            font-weight: 400;
-            width: 282px;
-        }
-
-        .main__title h2 {
-            font-size: 36px;
-
-        }
-            
-            .card {
-                width: 164px;
-                height: 238px;
-                margin: 1px;
-                
-            }
-            
-            .card__img {
-                width: 100%;
-                height: auto;
-            }
-
-
-
-
-        .collection__card {
-            width: 343px;
-            height: 216px;
-    
-        }
-    
-        .collection__card h3 {
-            font-size: 36px;
-        }
-
-
-
+  
+    .header__content--app-btn {
+      gap: 0.5rem;
     }
 
+  
+    
+  }
 
 
 
