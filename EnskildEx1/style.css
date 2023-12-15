@@ -160,6 +160,11 @@ body {
     border-radius: 3px;
     margin-bottom: 3rem;
   }
+
+  .card:hover {
+    box-shadow: 0.3px 2px 4px rgba(0, 0, 0, 0.411);
+
+  }
     
     .card__img {
         width: 100%;
